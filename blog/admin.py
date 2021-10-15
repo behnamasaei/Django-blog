@@ -16,6 +16,7 @@ class PostAdmin(admin.ModelAdmin):
     row_id_fields = ('author',)
     # sort navigation by publish
     date_hierarchy = 'publish'
+    list_display_links = None
 
 
 ordering = ('status', 'publish')
